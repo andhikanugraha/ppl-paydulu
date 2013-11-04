@@ -15,4 +15,4 @@ app.get('/pay/:client', function(req, res) {
   res.send('<form action="' + re + '" method="POST"><button type="submit">Pay ' + total + '</button></form>');
 });
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
